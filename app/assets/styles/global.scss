@@ -1,0 +1,43 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family-main;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-text-dark;
+  background-color: $color-background-white;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-text-dark;
+  margin-bottom: $spacing-md;
+  line-height: 1.2;
+}
+
+h1 { font-size: $font-size-h1; }
+h3 { font-size: $font-size-h3; } 
+
+p {
+  font-size: $font-size-p;
+  margin-bottom: $spacing-md;
+}
+
+.layout {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: $spacing-lg $spacing-md; 
+
+  @include media-up(lg) {
+    padding: $spacing-xl $spacing-lg;
+  }
+}

@@ -1,0 +1,90 @@
+.challenges-container {
+    width: 270px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.challenges-image {
+    display: none;
+}
+
+.challenges-list {
+    width: 270px;
+}
+
+.challenges-tag {
+    font-size: $font-size-small;
+    color: $color-text-pink;
+    font-weight: $font-weight-normal;
+}
+
+.challenges-title {
+    font-size: $font-size-h2;
+    font-weight: $font-weight-bold;
+    color: $color-text-dark;
+    margin: $spacing-sm 0 $spacing-lg 0;
+}
+
+@media screen and (min-width: 768px) {
+    .challenges-container {
+        width: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .challenges-list {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .challenges-container {
+        width: 900px;
+        margin: auto;
+    }
+
+    .challenges-image {
+        display: block;
+        width: 420px;
+        height: auto;
+    }
+
+    .challenges-list {
+        width: 360px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .challenges-container {
+        width: 1024px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .challenges-image {
+        width: 520px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .challenges-container {
+        width: 1200px;
+        margin: 0;
+    }
+
+    .challenges-image {
+        width: 650px;
+        height: 540px;
+    }
+
+    .challenges-list {
+        width: 400px;
+    }
+
+    .challenges-title {
+        font-size: $font-size-h1;
+    }
+}

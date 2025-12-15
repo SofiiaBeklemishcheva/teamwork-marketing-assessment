@@ -1,0 +1,83 @@
+.challenge-container {
+    margin: 25px 0;
+    width: 260px;
+    border-radius: 4px;
+    background-color: $color-background-violet;
+}
+
+.challenge-header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    border: none;
+    background-color: $color-background-violet;
+    border-radius: 4px;
+}
+
+.icon-arrow {
+    all: unset;
+    display: block;
+    cursor: pointer;
+    width: 14px;
+    height: 8px;
+}
+
+.challenge-title {
+    margin: 0;
+    font-size: $font-size-p2;
+    font-weight: $font-weight-semi-bold;
+    color: $color-text-black;
+
+    &.is-active {
+        color: $color-text-blue;
+    }
+}
+
+.challenge-content {
+    padding: 10px 20px;
+    font-size: $font-size-small2;
+    color: $color-text-gray;
+    font-weight: $font-weight-normal;
+}
+
+.challenge-mobile-image {
+    display: block;
+    width: 240px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 4px 4px 0 0;
+}
+
+@media screen and (min-width: 768px) {
+    .challenge-container {
+        width: 320px;
+    }
+
+    .challenge-title {
+        font-size: $font-size-h3;
+    }
+
+    .challenge-content {
+        font-size: $font-size-p;
+    }
+
+    .challenge-mobile-image {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .challenge-container {
+        
+        width: 360px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .challenge-container {
+        width: 400px;
+    }
+}

@@ -1,0 +1,30 @@
+$breakpoints: (
+  'sm': 576px,  
+  'md': 768px, 
+  'tab': 992px, 
+  'lg': 1024px, 
+  'xl': 1200px, 
+  'xxl': 1400px, 
+);
+
+@mixin media-up($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media screen and (max-width: map-get($breakpoints, $name)) {
+      @content;
+    }
+  } @else {
+    @error "Breakpoint '#{$name}' nie istnieje w mapie $breakpoints.";
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
