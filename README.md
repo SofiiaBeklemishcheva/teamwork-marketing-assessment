@@ -5,7 +5,7 @@ This project is an implementation of an interactive Challenges List built with N
 
 Project Structure
 
-The project follows the standard Nuxt 3 directory structure, extended with additional directories for SCSS styling, Storybook, and Vue composables.
+The project follows the standard Nuxt 4 directory structure, extended with additional directories for SCSS styling, Storybook, and Vue composables.
 
 Directories and Files
 Path	Description
